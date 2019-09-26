@@ -1,0 +1,82 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\kid00> ls
+
+
+    Directory: C:\Users\kid00
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        7/29/2019  12:49 AM                .anaconda
+d-----         9/3/2019   8:36 PM                .conda
+d-----        9/21/2018   7:54 AM                .eclipse
+d-----        7/29/2019  12:51 AM                .ipython
+d-----         8/5/2019   7:43 PM                .jupyter
+d-----        9/13/2019   6:44 PM                .p2
+d-----        9/20/2019   8:50 PM                .pylint.d
+d-----         4/9/2019   6:18 AM                .ssh
+d-----        9/21/2018   7:54 AM                .tooling
+d-----        9/13/2019   8:32 PM                .vscode
+d-r---        9/24/2019   7:37 PM                3D Objects
+d-----        7/29/2019  12:48 AM                Anaconda3
+d-----        8/25/2019   3:46 PM                Apple
+d-r---        9/24/2019   7:37 PM                Contacts
+d-r---        9/24/2019   7:37 PM                Desktop
+d-r---        9/24/2019   7:37 PM                Documents
+d-r---        9/25/2019   2:21 PM                Downloads
+d-----        9/21/2018   7:50 AM                eclipse
+d-----        9/21/2018   7:53 AM                eclipse-workspace
+d-r---        9/24/2019   7:37 PM                Favorites
+d-r---        9/25/2019   2:21 PM                iCloudDrive
+d-r---        9/24/2019   7:37 PM                Links
+d-r---        9/24/2019   7:37 PM                Music
+dar--l        9/26/2019   3:53 PM                OneDrive
+dar--l        9/26/2019   3:53 PM                OneDrive - The University of Texas at Dallas
+d-r---        9/24/2019   7:37 PM                Pictures
+d-----        9/15/2018   4:36 AM                Roaming
+d-r---        9/24/2019   7:37 PM                Saved Games
+d-r---        9/24/2019   7:37 PM                Searches
+d-----        9/21/2018   7:13 AM                source
+d-r---        9/24/2019   7:37 PM                Videos
+-a----         4/9/2019   7:23 AM            495 .bash_history
+-a----         9/3/2019  12:28 PM             43 .condarc
+-a----        9/20/2019   1:23 PM            154 .gitconfig
+-a----        4/10/2019   7:49 AM             22 miktex-console.lock
+
+
+PS C:\Users\kid00> cd Desktop
+PS C:\Users\kid00\Desktop> mkdir MH8811_02
+
+
+    Directory: C:\Users\kid00\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        9/26/2019   3:55 PM                MH8811_02
+
+
+PS C:\Users\kid00\Desktop> cd MH8811_02
+PS C:\Users\kid00\Desktop\MH8811_02> New-Item "my file"
+
+
+    Directory: C:\Users\kid00\Desktop\MH8811_02
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        9/26/2019   3:55 PM              0 my file
+
+
+PS C:\Users\kid00\Desktop\MH8811_02> cd ..
+PS C:\Users\kid00\Desktop> rm MH8811_02
+
+Confirm
+The item at C:\Users\kid00\Desktop\MH8811_02 has children and the Recurse parameter was not specified. If you continue,
+ all children will be removed with the item. Are you sure you want to continue?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): Y
+PS C:\Users\kid00\Desktop>

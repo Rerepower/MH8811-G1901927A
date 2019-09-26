@@ -1,6 +1,5 @@
-#
-x=5
-if x<10:
-    print("x<10")
-if x>10:
-    print("x>10")
+n=int(input())
+while n>0:
+    print(n)
+    n=n-1
+print('Fine')
