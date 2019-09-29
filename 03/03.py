@@ -7,7 +7,7 @@ def funcHelloWorld():
 #----------------------------------------------------#
 # Define User's Hello world function
 def funcUserHelloWorld():
-    username=input("Please input your name: ")
+    username = input("Please input your name: ")
     print('Hello, ',username,' !')
 #----------------------------------------------------#
 # Define Celsius to Fahrenheit convert function
@@ -16,11 +16,11 @@ def funcTempConvert():
     while True:
         try:
             str_num = input('Please enter a temperature in Celsius: ')
-            Celsius=float(str_num)
+            Celsius = float(str_num)
             break
         except:
             print('Incorrect input, please enter a NUMBER in Celsius!')
-    Fahrenheit=Celsius*1.8+32
+    Fahrenheit = Celsius*1.8+32
     print(str(Celsius) + ' Celsius in Fahrenheit is ' + str(Fahrenheit))
 #----------------------------------------------------#
 # Sub-program loop
