@@ -1,5 +1,5 @@
 # Calculate the sample variance for the dataset
-
+#-------------------------------------------------
 # Define getFileLines function
 def getFileLines(fname) :
     fhandle = open(fname)
@@ -10,7 +10,7 @@ def getFileLines(fname) :
             lines.append(line)
     fhandle.close()
     return lines
-
+#-------------------------------------------------
 # Define average function
 def myaverage(lst):
     count = 0
@@ -20,7 +20,7 @@ def myaverage(lst):
         sum = sum + value
     average_num = sum / count
     return average_num
-
+#-------------------------------------------------
 # Define sample variance funtion
 def myVariance(lst) :
     sumDiff = 0
@@ -30,14 +30,15 @@ def myVariance(lst) :
         count = count + 1
     my_variance = sumDiff / (count - 1)
     return my_variance
-
+#-------------------------------------------------
 # Import files
 lst = getFileLines('Data.csv')
-
+#-------------------------------------------------
 # Convert each element of lst into int type
 for i in range(0, len(lst)) :
     lst[i] = int(lst[i])
-
+#-------------------------------------------------
 # Call functions
 print('Sample Variance is', myVariance(lst))
 #end
+#-------------------------------------------------

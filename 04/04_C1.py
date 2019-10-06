@@ -1,5 +1,5 @@
 # Program C1: finding the smallest value
-
+#-------------------------------------------------
 smallest_so_far = None
 lst = [9, 41, 12, 3, 74, 15]
 print(lst)
@@ -12,3 +12,4 @@ for the_num in lst:
     print(smallest_so_far, the_num)
 print('After, the minimum value is', smallest_so_far)
 #end
+#-------------------------------------------------
