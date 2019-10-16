@@ -47,7 +47,6 @@ def comdict(d1,d2):
 # Open the file to load data
 d1 = my_openfile(input('Please input the file name you want to open: '))
 print(d1)
-print(type(d1))
 #----------------------------------------
 # Serialize the data into string in the file
 serialized_file = my_serializer(d1)
@@ -64,12 +63,10 @@ with open(savefile) as file2:
        d2=json.load(file2)
        file2.close()
 print(d2)
-print(type(d2))
 #----------------------------------------
 # Deserialize
 d2 = json.loads(d2)
 print(d2)
-print(type(d2))
 #----------------------------------------
 # Compare
 my_compare(d1,d2)
